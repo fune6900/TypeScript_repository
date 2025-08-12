@@ -10,5 +10,6 @@ console.log(greeting + target);
 
 const greeting3 = "Hello, ";
 const target3 = greeting3 + "World!";
+// "Hell, world!"と表示される
 console.log(target3)
 
