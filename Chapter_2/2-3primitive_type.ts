@@ -60,3 +60,14 @@ console.log(`私の名前は${name}です。年齢は${age}歳です。`);
 const str = "Hello, \nWorld!";
 console.log(str); // "Hello, \nWorld!"と表示される
 
+// 真偽値リテラル
+const yes: boolean = true;
+const no: boolean = false;
+console.log(yes); // true
+console.log(no); // false
+
+// nullとundefined
+const nothing: null = null;
+const notDefined: undefined = undefined;
+console.log(nothing); // null
+console.log(notDefined); // undefined
