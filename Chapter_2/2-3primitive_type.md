@@ -440,3 +440,10 @@ console.log(kanjiMatsuriWithBraces); // 出力: 祭
 - Bigint型にはBigint関数によって変換できる
 - Bigintは基本は整数しか対応していないため、文字列や少数を入力されるとランタイムエラー（例外）になってしまう
 - String型にはString関数によって変換できる
+
+## 真偽値への変換後の規則
+- 数値は0やNaNがfalseとなり、他はtrueとなる
+- Bigintでは0nがfalseとなり、それ以外がtrueとなる
+- 文字列では（""）から文字列だけがfalse隣、他はtrueとなる
+- nullやundifinedはfalseとなる
+- オブジェクトは全てfalseとなる
