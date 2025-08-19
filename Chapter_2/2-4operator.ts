@@ -40,3 +40,4 @@ console.log(fullName); // "Alice Smith"
 // 手軽なテンプレートリテラルを使うこともできる
 const fullNameTemplate = `${firstName} ${lastName}`; // テンプレートリテラル
 console.log(fullNameTemplate); // "Alice Smith"
+const fullNameWithAge = `${fullName} is 30 years old.`; // 年齢を含めた文字列
