@@ -113,3 +113,43 @@ rl.question('数値を入力してください:', (val) => {
 const value = "Hello, World!";
 const isTruthy = !!value; // 真偽値に変換
 console.log(isTruthy); // true (空でない文字列は真)
+
+// ||を使ったデフォルト値の設定
+// import { createInterface } from 'readline';
+// const rl = createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// rl.question('名前を入力してください:', (line) => {
+//   const name = String(line) || "ゲスト";
+//   console.log(`こんにちは、${name}さん！`);
+//   rl.close();
+// });
+
+// 短絡評価
+const a = true, b = false;
+const c = true;
+const result = a || (b && c); // aがtrueなので、bとcは評価されない
+console.log(result); // true (短絡評価によりbとcは評価されない)
+
+// ??演算子（Nullish Coalescing Operator）
+const input = null;
+const defaultValue = "デフォルト値";
+const resultValue = input ?? defaultValue; // inputがnullまたはundefinedならdefaultValueを使用
+console.log(resultValue); // "デフォルト値" (inputはnullなのでdefaultValueが使用される)
+
+// 条件演算子（Ternary Operator）
+const age = 20;
+const canVote = age >= 18 ? "投票できます" : "投票できません";
+console.log(canVote); // "投票できます" (ageは18以上なのでtrueの部分が選ばれる)
+
+// 代入演算子
+let x1 = 10; //基本形
+x1 += 5; // x1 = x1 + 5
+x1 -= 3; // x1 = x1 - 3
+x1 *= 2; // x1 = x1 * 2
+x1 /= 4; // x1 = x1 / 4
+x1 %= 3; // x1 = x1 % 3
+x1 **= 2; // x1 = x1 ** 2 (べき乗)
+console.log(x1); // 1.0 (最終的な値)
