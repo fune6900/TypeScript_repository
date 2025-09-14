@@ -34,3 +34,19 @@ if (score4 > 80) {
   console.log("合格！");
 }
 
+// // while文
+// let sum = 0;
+// let i = 1;
+
+// while (i <= 100) {
+//   sum += i; // sum = sum + i と同じ意味
+//   i++;      // i = i + 1 と同じ意味
+// }
+
+// for文
+let sum = 0;
+for (let i = 1; i <= 100; i++) {
+  sum += i;
+}
+console.log(sum); // 5050
+
